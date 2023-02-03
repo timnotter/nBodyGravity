@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/nBodyGravity.dir/main.cpp.o CMakeFiles/nBodyGravity.dir/particle.cpp.o CMakeFiles/nBodyGravity.dir/window.cpp.o CMakeFiles/nBodyGravity.dir/renderer.cpp.o CMakeFiles/nBodyGravity.dir/tree.cpp.o CMakeFiles/nBodyGravity.dir/treeCodeNode.cpp.o CMakeFiles/nBodyGravity.dir/positionVector.cpp.o  -o nBodyGravity  /usr/lib/x86_64-linux-gnu/libX11.so -lpthread 
