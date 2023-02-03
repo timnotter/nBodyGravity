@@ -1,0 +1,3 @@
+/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/rebuild_cache.dir
+/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/edit_cache.dir
+/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/nBodyGravity.dir
