@@ -123,9 +123,9 @@ int main(int argc, char** argv){
     // std::string treeCodeFileName = "./data/particleAccelerationsTreeCodeSoftening=0.000000001Timestep=0.00001Theta=0.01.txt";
     // output.open(treeCodeFileName);
     // output.close();
-    std::string densityFileName = "./data/densityFileL=0.00001.txt";
-    output.open(densityFileName);
-    output.close();
+    // std::string densityFileName = "./data/densityFileL=0.00001.txt";
+    // output.open(densityFileName);
+    // output.close();
     // std::string tRelaxFileName = "./data/tRelaxTreecodeSoftening=0.000001Timestep=0.0000000001Theta=0.25.txt";
     // output.open(tRelaxFileName);
     // output.close();
@@ -133,39 +133,39 @@ int main(int argc, char** argv){
     // Calculation density stuff
     // Max radius is 724.689658 - 724.7
     // Total mass is 4622219.259003
-    double M = 4622219.259003;
-    double particleMass = 92.4259;
-    double l = 0.00001;
-    double radius = l/2;
-    double a = 0.0782;
-    int particlesInShell[900000];
-    printf("Initialised array\n");
-    for(int i=0;i<900000;i++){
-        particlesInShell[i] = 0;
-    }
-    for(Particle particle: *particles){
-        double distance = particle.getPositionVector().length();
-        if(distance/l>=899999){
-            particlesInShell[899999]++;
-        }
-        else{
-            particlesInShell[(int)(distance/l)]++;
-        }
-    }
-    output.open(densityFileName);
-    // printf("Particles in each shell:\n");
-    // double cumMass = 0; // Cummulative mass inside radius
-    for(int i=0;i<900000;i++){
-        // cumMass = M * std::pow(radius+i*l, 2) / std::pow(radius+i*l+a, 2);           // Not needed anymore
-        double expected = M / (2*3.141592) * (a/(radius+i*l)) * (1/std::pow(radius+i*l+a, 3));
-        double volume = 4/3 * 3.141592 * (std::pow(l, 3)/4 + std::pow(radius+l*i, 2)*l*3);
-        expected /= particleMass;
-        expected *= volume;
-        output << radius + i*l << "\t\t\t" << particlesInShell[i] << "\t\t\t" << expected << "\t\t\t" << std::sqrt(expected) << "\n";
-        // printf("%f: %d\n", i/10.0, particlesInShell[i]);
-    }
-    printf("\n");
-    output.close();
+    // double M = 4622219.259003;
+    // double particleMass = 92.4259;
+    // double l = 0.00001;
+    // double radius = l/2;
+    // double a = 0.0782;
+    // int particlesInShell[900000];
+    // printf("Initialised array\n");
+    // for(int i=0;i<900000;i++){
+    //     particlesInShell[i] = 0;
+    // }
+    // for(Particle particle: *particles){
+    //     double distance = particle.getPositionVector().length();
+    //     if(distance/l>=899999){
+    //         particlesInShell[899999]++;
+    //     }
+    //     else{
+    //         particlesInShell[(int)(distance/l)]++;
+    //     }
+    // }
+    // output.open(densityFileName);
+    // // printf("Particles in each shell:\n");
+    // // double cumMass = 0; // Cummulative mass inside radius
+    // for(int i=0;i<900000;i++){
+    //     // cumMass = M * std::pow(radius+i*l, 2) / std::pow(radius+i*l+a, 2);           // Not needed anymore
+    //     double expected = M / (2*3.141592) * (a/(radius+i*l)) * (1/std::pow(radius+i*l+a, 3));
+    //     double volume = 4/3 * 3.141592 * (std::pow(l, 3)/4 + std::pow(radius+l*i, 2)*l*3);
+    //     expected /= particleMass;
+    //     expected *= volume;
+    //     output << radius + i*l << "\t\t\t" << particlesInShell[i] << "\t\t\t" << expected << "\t\t\t" << std::sqrt(expected) << "\n";
+    //     // printf("%f: %d\n", i/10.0, particlesInShell[i]);
+    // }
+    // printf("\n");
+    // output.close();
 
     // Search for furthest particle
     // double furthestDistance = 0;
@@ -268,7 +268,7 @@ int main(int argc, char** argv){
 
             // Update particles with direct summation/treecode approach
             // updateParticles(particles);
-            // updateParticles(particles, &tree);
+            updateParticles(particles, &tree);
             // for(int i=0;i<50;i++){
             //     printf("Particle %d used %d with an average of %f particles per node. Total particles used in nodes: %d\n", i, particles->at(i).nodesUsed, (double)(particles->at(i).particlesInUSedNodes)/particles->at(i).nodesUsed, (particles->at(i).particlesInUSedNodes));
             // }
@@ -292,7 +292,7 @@ int main(int argc, char** argv){
             counter++;
             totalTimePast += TIMESTEP * 2.3207 * std::pow(10, 21) / 3600 / 24 / 365;    // In years
             printf("Total time spent in simulation: %f years\n", totalTimePast);
-            isRunning = false;
+            // isRunning = false;
             // sleep(1);
         }
         else
