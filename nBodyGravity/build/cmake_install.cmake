@@ -1,4 +1,4 @@
-# Install script for directory: /home/tim/vs-code-workplace/nBodyGravity
+# Install script for directory: /home/tim/vs-code-workplace/nBodyGravity/nBodyGravity
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tim/vs-code-workplace/nBodyGravity/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

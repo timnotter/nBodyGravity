@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tim/vs-code-workplace/nBodyGravity/main.cpp" "/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/main.cpp.o"
-  "/home/tim/vs-code-workplace/nBodyGravity/particle.cpp" "/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/particle.cpp.o"
-  "/home/tim/vs-code-workplace/nBodyGravity/positionVector.cpp" "/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/positionVector.cpp.o"
-  "/home/tim/vs-code-workplace/nBodyGravity/renderer.cpp" "/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/renderer.cpp.o"
-  "/home/tim/vs-code-workplace/nBodyGravity/tree.cpp" "/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/tree.cpp.o"
-  "/home/tim/vs-code-workplace/nBodyGravity/treeCodeNode.cpp" "/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/treeCodeNode.cpp.o"
-  "/home/tim/vs-code-workplace/nBodyGravity/window.cpp" "/home/tim/vs-code-workplace/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/window.cpp.o"
+  "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/main.cpp" "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/main.cpp.o"
+  "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/particle.cpp" "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/particle.cpp.o"
+  "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/positionVector.cpp" "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/positionVector.cpp.o"
+  "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/renderer.cpp" "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/renderer.cpp.o"
+  "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/tree.cpp" "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/tree.cpp.o"
+  "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/treeCodeNode.cpp" "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/treeCodeNode.cpp.o"
+  "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/window.cpp" "/home/tim/vs-code-workplace/nBodyGravity/nBodyGravity/build/CMakeFiles/nBodyGravity.dir/window.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
